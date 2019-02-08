@@ -1,0 +1,29 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 87d3c3849719ca40b37b4c5745aa67a2a2f94c87baf87e7417e9f07695edaa5d
+
+name:           brownbag
+version:        0.0.0
+build-type:     Simple
+
+executable brownbag
+  main-is: brownbag.md.lhs
+  other-modules:
+      Paths_brownbag
+  hs-source-dirs:
+      src
+  default-extensions: BangPatterns ConstraintKinds DataKinds DefaultSignatures DeriveDataTypeable DeriveFoldable DeriveFunctor DeriveGeneric DeriveTraversable DerivingStrategies DisambiguateRecordFields DuplicateRecordFields EmptyCase ExplicitForAll FlexibleContexts FlexibleInstances FunctionalDependencies GADTs GADTSyntax GeneralizedNewtypeDeriving InstanceSigs KindSignatures LambdaCase MultiParamTypeClasses NamedFieldPuns OverloadedStrings PostfixOperators RankNTypes RecordWildCards ScopedTypeVariables StandaloneDeriving TupleSections TypeApplications TypeFamilies TypeOperators TypeSynonymInstances
+  ghc-options: -g -Wall -optL -q -Wno-unused-imports -Wno-missing-signatures -Wno-type-defaults -Wno-unused-top-binds -Wno-overlapping-patterns -Wno-unused-do-bind -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , aeson
+    , base
+    , bytestring
+    , generic-arbitrary
+    , text
+    , time
+  default-language: Haskell2010

@@ -1,0 +1,67 @@
+name:          brownbag
+
+ghc-options:
+- -g
+- -Wall
+- -optL -q
+- -Wno-unused-imports
+- -Wno-missing-signatures
+- -Wno-type-defaults
+- -Wno-unused-top-binds
+- -Wno-overlapping-patterns
+- -Wno-unused-do-bind
+
+default-extensions:
+- BangPatterns
+- ConstraintKinds
+- DataKinds
+- DefaultSignatures
+- DeriveDataTypeable
+- DeriveFoldable
+- DeriveFunctor
+- DeriveGeneric
+- DeriveTraversable
+- DerivingStrategies
+- DisambiguateRecordFields
+- DuplicateRecordFields
+- EmptyCase
+- ExplicitForAll
+- FlexibleContexts
+- FlexibleInstances
+- FunctionalDependencies
+- GADTs
+- GADTSyntax
+- GeneralizedNewtypeDeriving
+- InstanceSigs
+- KindSignatures
+- LambdaCase
+- MultiParamTypeClasses
+- NamedFieldPuns
+- OverloadedStrings
+- PostfixOperators
+- RankNTypes
+- RecordWildCards
+- ScopedTypeVariables
+- StandaloneDeriving
+- TupleSections
+- TypeApplications
+- TypeFamilies
+- TypeOperators
+- TypeSynonymInstances
+
+dependencies:
+- base >=4.7 && <5
+- aeson
+- bytestring
+- generic-arbitrary
+- time
+- text
+- QuickCheck
+
+executables:
+  brownbag:
+    main: brownbag.md.lhs
+    source-dirs: src
+    ghc-options: -threaded -rtsopts -with-rtsopts=-N
+    dependencies:
+    - base
